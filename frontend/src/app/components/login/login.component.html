@@ -1,0 +1,31 @@
+<app-headline>Login</app-headline>
+<p>Please insert your user name and password:</p>
+
+
+<form #login_form="ngForm" (ngSubmit)="send()">
+  <div>
+    <mat-form-field>
+        <input matInput type="text" name="userName" [(ngModel)]="user.userName" placeholder="User Name" required #userName="ngModel">
+    </mat-form-field>
+    <span *ngIf="userName.dirty && userName.invalid">Missing User Name</span>
+</div>
+
+  <div>
+      <mat-form-field>
+          <textarea matInput type="password" name="password" [(ngModel)]="user.password" placeholder="Password" required #password="ngModel"></textarea>
+      </mat-form-field>
+      <span *ngIf="password.dirty && password.invalid">Missing Password.</span>
+  </div>
+  <div>
+      <button mat-button [disabled]="login_form.form.invalid">
+          Login &nbsp; 
+          <mat-icon>send</mat-icon>
+      </button>
+      <button mat-button [routerLink]="['/register']">
+            Register
+            <mat-icon>edit</mat-icon>
+        </button>
+  </div>
+  <br>
+</form>
+

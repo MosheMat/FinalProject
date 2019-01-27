@@ -1,0 +1,11 @@
+<div *ngIf="currentUser">
+
+<mat-grid-list cols="5" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let cell of cells" (click)="imgSelect(cell)"
+  >
+    <img src="{{cell.imgSrc}}" >
+  </mat-grid-tile>
+</mat-grid-list>
+<button (click)="newGame()">Start New Game</button>
+<div>
+

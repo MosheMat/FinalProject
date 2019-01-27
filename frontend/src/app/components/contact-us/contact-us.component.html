@@ -1,0 +1,37 @@
+<app-headline>Contact us</app-headline>
+<p>We would like to keep you in touch, please insert the fields below:</p>
+
+<form #contact_us_form="ngForm" (ngSubmit)="send()">
+    <div>
+        <mat-form-field>
+            <input matInput type="number" name="phone" [(ngModel)]="contactUs.phoneNum" placeholder="Phone" required
+                #phone="ngModel">
+        </mat-form-field>
+        <span *ngIf="phone.dirty && phone.invalid">Missing Phone</span>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <input matInput type="email" name="email" [(ngModel)]="contactUs.email" placeholder="Email..." required
+                email #email="ngModel">
+        </mat-form-field>
+        <span *ngIf="email.dirty && email.invalid">Invalid Email.</span>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <textarea matInput type="text" name="message" [(ngModel)]="contactUs.ticketText" placeholder="Message..."
+                required #message="ngModel"></textarea>
+        </mat-form-field>
+        <span *ngIf="message.dirty && message.invalid">Missing Message.</span>
+    </div>
+
+    <div>
+        <button mat-button [disabled]="contact_us_form.form.invalid">
+            Send &nbsp;
+            <mat-icon>send</mat-icon>
+        </button>
+    </div>
+
+    <br>
+</form>

@@ -1,0 +1,15 @@
+<app-headline>Feedbacks of users:</app-headline>
+
+
+<table border="1">
+    <tr>
+        <th>User Name</th>
+        <th>Text</th>
+        <th>Create Date</th>
+    </tr>
+    <tr *ngFor="let f of feedbacks">
+        <td>{{f.userName}}</td>
+        <td>{{f.feedbackText}}</td>
+        <td>{{f.createTime | date:'short'}}</td>
+    </tr>
+</table>

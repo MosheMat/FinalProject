@@ -1,0 +1,21 @@
+<app-headline>Game results of users:</app-headline>
+
+
+<table border="1">
+    <tr>
+        <th>Game Date</th>
+        <th>Full Name</th>
+        <th>User Name</th>
+        <th>Game Duration (sec)</th>
+        <th>Moves Number</th>
+    </tr>
+    <tr *ngFor="let g of gameResults">
+        <td>{{g.gameTime | date:'short'}}</td>
+        <td>{{g.fullName}}</td>
+        <td>{{g.userName}}</td>
+        <td>{{g.gameDuration}}</td>
+        <td>{{g.movesNum}}</td>
+
+
+    </tr>
+</table>

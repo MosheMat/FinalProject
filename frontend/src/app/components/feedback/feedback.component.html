@@ -1,0 +1,23 @@
+<app-headline>Feedback</app-headline>
+<div *ngIf="currentUser">
+    <p>Hi {{currentUser.userName}},We would like to keep in touch you, please insert the fields below:</p>
+
+    <form #feedback_form="ngForm" (ngSubmit)="send()">
+        <div>
+            <mat-form-field>
+                <textarea matInput type="text" name="message" [(ngModel)]="feedback.feedbackText" placeholder="Feedback Text"
+                    required #message="ngModel"></textarea>
+            </mat-form-field>
+            <span *ngIf="message.dirty && message.invalid">Missing Message.</span>
+        </div>
+
+        <div>
+            <button mat-button [disabled]="feedback_form.form.invalid">
+                Send &nbsp;
+                <mat-icon>send</mat-icon>
+            </button>
+        </div>
+        <br>
+
+    </form>
+</div>
