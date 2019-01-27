@@ -1,0 +1,24 @@
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\Logic.dll
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\Logic.pdb
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\DAL.dll
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\DAL.pdb
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\DAL.dll.config
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\EntityFramework.xml
+C:\Users\moish\source\repos\Finall Project\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\moish\source\repos\Finall Project\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\moish\source\repos\Finall Project\Logic\obj\Debug\Logic.dll
+C:\Users\moish\source\repos\Finall Project\Logic\obj\Debug\Logic.pdb
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\Entites Layer.dll
+C:\Users\moish\source\repos\Finall Project\Logic\bin\Debug\Entites Layer.pdb
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\Logic.dll
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\Logic.pdb
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\DAL.dll
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\Entites Layer.dll
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\DAL.pdb
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\DAL.dll.config
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\Entites Layer.pdb
+C:\Users\moish\Desktop\New folder\backend\Logic\bin\Debug\EntityFramework.xml
+C:\Users\moish\Desktop\New folder\backend\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\moish\Desktop\New folder\backend\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\moish\Desktop\New folder\backend\Logic\obj\Debug\Logic.dll
+C:\Users\moish\Desktop\New folder\backend\Logic\obj\Debug\Logic.pdb

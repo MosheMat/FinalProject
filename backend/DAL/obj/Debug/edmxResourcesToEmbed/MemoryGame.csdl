@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MemoryGameModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Contact_us">
+    <Key>
+      <PropertyRef Name="ticket_id" />
+    </Key>
+    <Property Name="ticket_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="phone_num" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="e_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticket_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Feedback">
+    <Key>
+      <PropertyRef Name="feedback_id" />
+    </Key>
+    <Property Name="feedback_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="create_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="feedback_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Feedbacks_Users" FromRole="Feedbacks" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="GameResult">
+    <Key>
+      <PropertyRef Name="game_id" />
+    </Key>
+    <Property Name="game_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="game_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="game_duration" Type="Int32" Nullable="false" />
+    <Property Name="moves_num" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GameResults1" Relationship="Self.FK_GamedResults_GamedResults" FromRole="GameResults" ToRole="GameResults1" />
+    <NavigationProperty Name="GameResult1" Relationship="Self.FK_GamedResults_GamedResults" FromRole="GameResults1" ToRole="GameResults" />
+    <NavigationProperty Name="GameResults11" Relationship="Self.FK_GamedResults_GamedResults1" FromRole="GameResults" ToRole="GameResults1" />
+    <NavigationProperty Name="GameResult2" Relationship="Self.FK_GamedResults_GamedResults1" FromRole="GameResults1" ToRole="GameResults" />
+    <NavigationProperty Name="User" Relationship="Self.FK_GameResults_Users" FromRole="GameResults" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="img_id" />
+    </Key>
+    <Property Name="img_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="file_path" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="full_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="birth_date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Feedbacks" Relationship="Self.FK_Feedbacks_Users" FromRole="Users" ToRole="Feedbacks" />
+    <NavigationProperty Name="GameResults" Relationship="Self.FK_GameResults_Users" FromRole="Users" ToRole="GameResults" />
+  </EntityType>
+  <Association Name="FK_Feedbacks_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Feedbacks" Type="Self.Feedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Feedbacks">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GamedResults_GamedResults">
+    <End Role="GameResults" Type="Self.GameResult" Multiplicity="1" />
+    <End Role="GameResults1" Type="Self.GameResult" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="GameResults">
+        <PropertyRef Name="game_id" />
+      </Principal>
+      <Dependent Role="GameResults1">
+        <PropertyRef Name="game_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GamedResults_GamedResults1">
+    <End Role="GameResults" Type="Self.GameResult" Multiplicity="1" />
+    <End Role="GameResults1" Type="Self.GameResult" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="GameResults">
+        <PropertyRef Name="game_id" />
+      </Principal>
+      <Dependent Role="GameResults1">
+        <PropertyRef Name="game_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GameResults_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="GameResults" Type="Self.GameResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="GameResults">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MemoryGameEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contact_us" EntityType="Self.Contact_us" />
+    <EntitySet Name="Feedbacks" EntityType="Self.Feedback" />
+    <EntitySet Name="GameResults" EntityType="Self.GameResult" />
+    <EntitySet Name="Images" EntityType="Self.Image" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Feedbacks_Users" Association="Self.FK_Feedbacks_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Feedbacks" EntitySet="Feedbacks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GamedResults_GamedResults" Association="Self.FK_GamedResults_GamedResults">
+      <End Role="GameResults" EntitySet="GameResults" />
+      <End Role="GameResults1" EntitySet="GameResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GamedResults_GamedResults1" Association="Self.FK_GamedResults_GamedResults1">
+      <End Role="GameResults" EntitySet="GameResults" />
+      <End Role="GameResults1" EntitySet="GameResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GameResults_Users" Association="Self.FK_GameResults_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GameResults" EntitySet="GameResults" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

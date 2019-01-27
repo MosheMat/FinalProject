@@ -1,0 +1,64 @@
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Web API.dll.config
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Web API.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Web API.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Newtonsoft.Json.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Net.Http.Formatting.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.WebHost.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Newtonsoft.Json.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Net.Http.Formatting.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.WebHost.xml
+C:\Users\moish\source\repos\Finall Project\Web API\obj\Debug\Web API.csprojResolveAssemblyReference.cache
+C:\Users\moish\source\repos\Finall Project\Web API\obj\Debug\Web API.csproj.CoreCompileInputs.cache
+C:\Users\moish\source\repos\Finall Project\Web API\obj\Debug\Web API.dll
+C:\Users\moish\source\repos\Finall Project\Web API\obj\Debug\Web API.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Entites Layer.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Logic.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Cors.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.Cors.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\DAL.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\EntityFramework.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Entites Layer.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Logic.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\System.Web.Http.Cors.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\DAL.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\DAL.dll.config
+C:\Users\moish\source\repos\Finall Project\Web API\bin\EntityFramework.xml
+C:\Users\moish\source\repos\Finall Project\Web API\bin\Newtonsoft.Json.pdb
+C:\Users\moish\source\repos\Finall Project\Web API\bin\EntityFramework.SqlServer.dll
+C:\Users\moish\source\repos\Finall Project\Web API\bin\EntityFramework.SqlServer.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Web API.dll.config
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Web API.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Web API.pdb
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\DAL.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Entites Layer.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\EntityFramework.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\EntityFramework.SqlServer.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Logic.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Newtonsoft.Json.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Net.Http.Formatting.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Cors.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.Cors.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.WebHost.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\DAL.pdb
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\DAL.dll.config
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Entites Layer.pdb
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Logic.pdb
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\EntityFramework.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\EntityFramework.SqlServer.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Newtonsoft.Json.pdb
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\Newtonsoft.Json.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Net.Http.Formatting.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.Cors.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\bin\System.Web.Http.WebHost.xml
+C:\Users\moish\Desktop\New folder\backend\Web API\obj\Debug\Web API.csprojResolveAssemblyReference.cache
+C:\Users\moish\Desktop\New folder\backend\Web API\obj\Debug\Web API.csproj.CoreCompileInputs.cache
+C:\Users\moish\Desktop\New folder\backend\Web API\obj\Debug\Web API.dll
+C:\Users\moish\Desktop\New folder\backend\Web API\obj\Debug\Web API.pdb
